@@ -1,5 +1,5 @@
 # myGames
-##### This is going to be a combination of several minigames.
+This is going to be a combination of several minigames.
 
-# Tic Tac Toe
+## Tic Tac Toe
 Implementation of the minimax algorithm.
