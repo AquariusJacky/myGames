@@ -1,0 +1,14 @@
+/home/aquariusj/c++/myGames/build/CMakeFiles/test.dir
+/home/aquariusj/c++/myGames/build/CMakeFiles/edit_cache.dir
+/home/aquariusj/c++/myGames/build/CMakeFiles/rebuild_cache.dir
+/home/aquariusj/c++/myGames/build/src/CMakeFiles/MyGames.dir
+/home/aquariusj/c++/myGames/build/src/CMakeFiles/test.dir
+/home/aquariusj/c++/myGames/build/src/CMakeFiles/edit_cache.dir
+/home/aquariusj/c++/myGames/build/src/CMakeFiles/rebuild_cache.dir
+/home/aquariusj/c++/myGames/build/src/lib/CMakeFiles/Tree.dir
+/home/aquariusj/c++/myGames/build/src/lib/CMakeFiles/test.dir
+/home/aquariusj/c++/myGames/build/src/lib/CMakeFiles/edit_cache.dir
+/home/aquariusj/c++/myGames/build/src/lib/CMakeFiles/rebuild_cache.dir
+/home/aquariusj/c++/myGames/build/test/CMakeFiles/test.dir
+/home/aquariusj/c++/myGames/build/test/CMakeFiles/edit_cache.dir
+/home/aquariusj/c++/myGames/build/test/CMakeFiles/rebuild_cache.dir
