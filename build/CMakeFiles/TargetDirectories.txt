@@ -9,6 +9,10 @@
 /home/aquariusj/c++/myGames/build/src/lib/CMakeFiles/test.dir
 /home/aquariusj/c++/myGames/build/src/lib/CMakeFiles/edit_cache.dir
 /home/aquariusj/c++/myGames/build/src/lib/CMakeFiles/rebuild_cache.dir
+/home/aquariusj/c++/myGames/build/src/tictactoe/CMakeFiles/TicTacToe.dir
+/home/aquariusj/c++/myGames/build/src/tictactoe/CMakeFiles/test.dir
+/home/aquariusj/c++/myGames/build/src/tictactoe/CMakeFiles/edit_cache.dir
+/home/aquariusj/c++/myGames/build/src/tictactoe/CMakeFiles/rebuild_cache.dir
 /home/aquariusj/c++/myGames/build/test/CMakeFiles/test.dir
 /home/aquariusj/c++/myGames/build/test/CMakeFiles/edit_cache.dir
 /home/aquariusj/c++/myGames/build/test/CMakeFiles/rebuild_cache.dir

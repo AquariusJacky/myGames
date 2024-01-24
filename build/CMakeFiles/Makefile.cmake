@@ -13,6 +13,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.26.3/CMakeSystem.cmake"
   "/home/aquariusj/c++/myGames/src/CMakeLists.txt"
   "/home/aquariusj/c++/myGames/src/lib/CMakeLists.txt"
+  "/home/aquariusj/c++/myGames/src/tictactoe/CMakeLists.txt"
   "/home/aquariusj/c++/myGames/test/CMakeLists.txt"
   "/usr/lib/x86_64-linux-gnu/cmake/GTest/GTestConfig.cmake"
   "/usr/lib/x86_64-linux-gnu/cmake/GTest/GTestConfigVersion.cmake"
@@ -58,6 +59,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/lib/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/tictactoe/CMakeFiles/CMakeDirectoryInformation.cmake"
   "test/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
@@ -65,4 +67,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "src/CMakeFiles/MyGames.dir/DependInfo.cmake"
   "src/lib/CMakeFiles/Tree.dir/DependInfo.cmake"
+  "src/tictactoe/CMakeFiles/TicTacToe.dir/DependInfo.cmake"
   )

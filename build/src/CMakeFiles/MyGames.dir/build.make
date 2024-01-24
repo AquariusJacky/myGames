@@ -92,6 +92,7 @@ MyGames_EXTERNAL_OBJECTS =
 
 bin/MyGames: src/CMakeFiles/MyGames.dir/main.cpp.o
 bin/MyGames: src/CMakeFiles/MyGames.dir/build.make
+bin/MyGames: lib/libTicTacToe.a
 bin/MyGames: src/CMakeFiles/MyGames.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/aquariusj/c++/myGames/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../bin/MyGames"
 	cd /home/aquariusj/c++/myGames/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MyGames.dir/link.txt --verbose=$(VERBOSE)

@@ -1,5 +1,6 @@
-src/CMakeFiles/MyGames.dir/main.cpp.o: \
- /home/aquariusj/c++/myGames/src/main.cpp /usr/include/stdc-predef.h \
+src/tictactoe/CMakeFiles/TicTacToe.dir/tictactoe.cpp.o: \
+ /home/aquariusj/c++/myGames/src/tictactoe/tictactoe.cpp \
+ /usr/include/stdc-predef.h \
  /home/aquariusj/c++/myGames/src/tictactoe/tictactoe.h \
  /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \

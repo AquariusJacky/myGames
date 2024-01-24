@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../lib/libTicTacToe.a CMakeFiles/TicTacToe.dir/tictactoe.cpp.o
+/usr/bin/ranlib ../../lib/libTicTacToe.a

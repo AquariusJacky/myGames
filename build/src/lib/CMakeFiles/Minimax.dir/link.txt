@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../lib/libMinimax.a CMakeFiles/Minimax.dir/minimax.cpp.o
+/usr/bin/ranlib ../../lib/libMinimax.a

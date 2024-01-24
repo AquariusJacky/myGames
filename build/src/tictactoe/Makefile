@@ -97,14 +97,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/aquariusj/c++/myGames/build/CMakeFiles /home/aquariusj/c++/myGames/build//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	cd /home/aquariusj/c++/myGames/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/aquariusj/c++/myGames/build/CMakeFiles /home/aquariusj/c++/myGames/build/src/tictactoe//CMakeFiles/progress.marks
+	cd /home/aquariusj/c++/myGames/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/tictactoe/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/aquariusj/c++/myGames/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd /home/aquariusj/c++/myGames/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/tictactoe/clean
 .PHONY : clean
 
 # The main clean target
@@ -113,57 +113,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/aquariusj/c++/myGames/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/tictactoe/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/aquariusj/c++/myGames/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/tictactoe/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/aquariusj/c++/myGames/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named MyGames
+# Convenience name for target.
+src/tictactoe/CMakeFiles/TicTacToe.dir/rule:
+	cd /home/aquariusj/c++/myGames/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/tictactoe/CMakeFiles/TicTacToe.dir/rule
+.PHONY : src/tictactoe/CMakeFiles/TicTacToe.dir/rule
 
-# Build rule for target.
-MyGames: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MyGames
-.PHONY : MyGames
-
-# fast build rule for target.
-MyGames/fast:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/MyGames.dir/build.make src/CMakeFiles/MyGames.dir/build
-.PHONY : MyGames/fast
-
-#=============================================================================
-# Target rules for targets named Tree
-
-# Build rule for target.
-Tree: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Tree
-.PHONY : Tree
-
-# fast build rule for target.
-Tree/fast:
-	$(MAKE) $(MAKESILENT) -f src/lib/CMakeFiles/Tree.dir/build.make src/lib/CMakeFiles/Tree.dir/build
-.PHONY : Tree/fast
-
-#=============================================================================
-# Target rules for targets named TicTacToe
-
-# Build rule for target.
-TicTacToe: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TicTacToe
+# Convenience name for target.
+TicTacToe: src/tictactoe/CMakeFiles/TicTacToe.dir/rule
 .PHONY : TicTacToe
 
 # fast build rule for target.
 TicTacToe/fast:
-	$(MAKE) $(MAKESILENT) -f src/tictactoe/CMakeFiles/TicTacToe.dir/build.make src/tictactoe/CMakeFiles/TicTacToe.dir/build
+	cd /home/aquariusj/c++/myGames/build && $(MAKE) $(MAKESILENT) -f src/tictactoe/CMakeFiles/TicTacToe.dir/build.make src/tictactoe/CMakeFiles/TicTacToe.dir/build
 .PHONY : TicTacToe/fast
+
+tictactoe.o: tictactoe.cpp.o
+.PHONY : tictactoe.o
+
+# target to build an object file
+tictactoe.cpp.o:
+	cd /home/aquariusj/c++/myGames/build && $(MAKE) $(MAKESILENT) -f src/tictactoe/CMakeFiles/TicTacToe.dir/build.make src/tictactoe/CMakeFiles/TicTacToe.dir/tictactoe.cpp.o
+.PHONY : tictactoe.cpp.o
+
+tictactoe.i: tictactoe.cpp.i
+.PHONY : tictactoe.i
+
+# target to preprocess a source file
+tictactoe.cpp.i:
+	cd /home/aquariusj/c++/myGames/build && $(MAKE) $(MAKESILENT) -f src/tictactoe/CMakeFiles/TicTacToe.dir/build.make src/tictactoe/CMakeFiles/TicTacToe.dir/tictactoe.cpp.i
+.PHONY : tictactoe.cpp.i
+
+tictactoe.s: tictactoe.cpp.s
+.PHONY : tictactoe.s
+
+# target to generate assembly for a file
+tictactoe.cpp.s:
+	cd /home/aquariusj/c++/myGames/build && $(MAKE) $(MAKESILENT) -f src/tictactoe/CMakeFiles/TicTacToe.dir/build.make src/tictactoe/CMakeFiles/TicTacToe.dir/tictactoe.cpp.s
+.PHONY : tictactoe.cpp.s
 
 # Help Target
 help:
@@ -174,9 +173,10 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test"
-	@echo "... MyGames"
 	@echo "... TicTacToe"
-	@echo "... Tree"
+	@echo "... tictactoe.o"
+	@echo "... tictactoe.i"
+	@echo "... tictactoe.s"
 .PHONY : help
 
 
@@ -188,6 +188,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/aquariusj/c++/myGames/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
