@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/aquariusj/c++/myGames/build/src/lib/Tree_autogen/mocs_compilation.cpp" "src/lib/CMakeFiles/Tree.dir/Tree_autogen/mocs_compilation.cpp.o" "gcc" "src/lib/CMakeFiles/Tree.dir/Tree_autogen/mocs_compilation.cpp.o.d"
   "/home/aquariusj/c++/myGames/src/lib/tree.cpp" "src/lib/CMakeFiles/Tree.dir/tree.cpp.o" "gcc" "src/lib/CMakeFiles/Tree.dir/tree.cpp.o.d"
   )
 

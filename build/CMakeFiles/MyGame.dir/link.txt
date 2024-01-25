@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall CMakeFiles/MyGame.dir/src/main.cpp.o -o bin/MyGame  lib/libTicTacToe.a lib/libTree.a 

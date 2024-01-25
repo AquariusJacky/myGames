@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I/home/aquariusj/c++/myGames/build/src/lib/Tree_autogen/include
 
 CXX_FLAGS =  -Wall -std=gnu++17
 

@@ -44,12 +44,12 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/aquariusj/c++/myGames/build/src/cmake_install.cmake")
+  include("/home/aquariusj/c++/myGames/build/libs/TicTacToe/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/aquariusj/c++/myGames/build/test/cmake_install.cmake")
+  include("/home/aquariusj/c++/myGames/build/libs/Tree/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)

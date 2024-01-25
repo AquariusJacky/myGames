@@ -1,2 +1,2 @@
-/usr/bin/ar qc ../../lib/libTree.a CMakeFiles/Tree.dir/tree.cpp.o
+/usr/bin/ar qc ../../lib/libTree.a CMakeFiles/Tree.dir/Tree_autogen/mocs_compilation.cpp.o CMakeFiles/Tree.dir/tree.cpp.o
 /usr/bin/ranlib ../../lib/libTree.a

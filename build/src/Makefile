@@ -127,25 +127,39 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-src/CMakeFiles/MyGames.dir/rule:
-	cd /home/aquariusj/c++/myGames/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/MyGames.dir/rule
-.PHONY : src/CMakeFiles/MyGames.dir/rule
+src/CMakeFiles/myGames.dir/rule:
+	cd /home/aquariusj/c++/myGames/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/myGames.dir/rule
+.PHONY : src/CMakeFiles/myGames.dir/rule
 
 # Convenience name for target.
-MyGames: src/CMakeFiles/MyGames.dir/rule
-.PHONY : MyGames
+myGames: src/CMakeFiles/myGames.dir/rule
+.PHONY : myGames
 
 # fast build rule for target.
-MyGames/fast:
-	cd /home/aquariusj/c++/myGames/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/MyGames.dir/build.make src/CMakeFiles/MyGames.dir/build
-.PHONY : MyGames/fast
+myGames/fast:
+	cd /home/aquariusj/c++/myGames/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/myGames.dir/build.make src/CMakeFiles/myGames.dir/build
+.PHONY : myGames/fast
+
+# Convenience name for target.
+src/CMakeFiles/myGames_autogen.dir/rule:
+	cd /home/aquariusj/c++/myGames/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/myGames_autogen.dir/rule
+.PHONY : src/CMakeFiles/myGames_autogen.dir/rule
+
+# Convenience name for target.
+myGames_autogen: src/CMakeFiles/myGames_autogen.dir/rule
+.PHONY : myGames_autogen
+
+# fast build rule for target.
+myGames_autogen/fast:
+	cd /home/aquariusj/c++/myGames/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/myGames_autogen.dir/build.make src/CMakeFiles/myGames_autogen.dir/build
+.PHONY : myGames_autogen/fast
 
 main.o: main.cpp.o
 .PHONY : main.o
 
 # target to build an object file
 main.cpp.o:
-	cd /home/aquariusj/c++/myGames/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/MyGames.dir/build.make src/CMakeFiles/MyGames.dir/main.cpp.o
+	cd /home/aquariusj/c++/myGames/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/myGames.dir/build.make src/CMakeFiles/myGames.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -153,7 +167,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd /home/aquariusj/c++/myGames/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/MyGames.dir/build.make src/CMakeFiles/MyGames.dir/main.cpp.i
+	cd /home/aquariusj/c++/myGames/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/myGames.dir/build.make src/CMakeFiles/myGames.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -161,8 +175,32 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd /home/aquariusj/c++/myGames/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/MyGames.dir/build.make src/CMakeFiles/MyGames.dir/main.cpp.s
+	cd /home/aquariusj/c++/myGames/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/myGames.dir/build.make src/CMakeFiles/myGames.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+myGames_autogen/mocs_compilation.o: myGames_autogen/mocs_compilation.cpp.o
+.PHONY : myGames_autogen/mocs_compilation.o
+
+# target to build an object file
+myGames_autogen/mocs_compilation.cpp.o:
+	cd /home/aquariusj/c++/myGames/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/myGames.dir/build.make src/CMakeFiles/myGames.dir/myGames_autogen/mocs_compilation.cpp.o
+.PHONY : myGames_autogen/mocs_compilation.cpp.o
+
+myGames_autogen/mocs_compilation.i: myGames_autogen/mocs_compilation.cpp.i
+.PHONY : myGames_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+myGames_autogen/mocs_compilation.cpp.i:
+	cd /home/aquariusj/c++/myGames/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/myGames.dir/build.make src/CMakeFiles/myGames.dir/myGames_autogen/mocs_compilation.cpp.i
+.PHONY : myGames_autogen/mocs_compilation.cpp.i
+
+myGames_autogen/mocs_compilation.s: myGames_autogen/mocs_compilation.cpp.s
+.PHONY : myGames_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+myGames_autogen/mocs_compilation.cpp.s:
+	cd /home/aquariusj/c++/myGames/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/myGames.dir/build.make src/CMakeFiles/myGames.dir/myGames_autogen/mocs_compilation.cpp.s
+.PHONY : myGames_autogen/mocs_compilation.cpp.s
 
 # Help Target
 help:
@@ -173,10 +211,14 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test"
-	@echo "... MyGames"
+	@echo "... myGames_autogen"
+	@echo "... myGames"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... myGames_autogen/mocs_compilation.o"
+	@echo "... myGames_autogen/mocs_compilation.i"
+	@echo "... myGames_autogen/mocs_compilation.s"
 .PHONY : help
 
 

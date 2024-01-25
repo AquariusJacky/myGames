@@ -1,1 +1,0 @@
-add_library(TicTacToe STATIC tictactoe.cpp)

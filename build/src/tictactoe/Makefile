@@ -140,6 +140,44 @@ TicTacToe/fast:
 	cd /home/aquariusj/c++/myGames/build && $(MAKE) $(MAKESILENT) -f src/tictactoe/CMakeFiles/TicTacToe.dir/build.make src/tictactoe/CMakeFiles/TicTacToe.dir/build
 .PHONY : TicTacToe/fast
 
+# Convenience name for target.
+src/tictactoe/CMakeFiles/TicTacToe_autogen.dir/rule:
+	cd /home/aquariusj/c++/myGames/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/tictactoe/CMakeFiles/TicTacToe_autogen.dir/rule
+.PHONY : src/tictactoe/CMakeFiles/TicTacToe_autogen.dir/rule
+
+# Convenience name for target.
+TicTacToe_autogen: src/tictactoe/CMakeFiles/TicTacToe_autogen.dir/rule
+.PHONY : TicTacToe_autogen
+
+# fast build rule for target.
+TicTacToe_autogen/fast:
+	cd /home/aquariusj/c++/myGames/build && $(MAKE) $(MAKESILENT) -f src/tictactoe/CMakeFiles/TicTacToe_autogen.dir/build.make src/tictactoe/CMakeFiles/TicTacToe_autogen.dir/build
+.PHONY : TicTacToe_autogen/fast
+
+TicTacToe_autogen/mocs_compilation.o: TicTacToe_autogen/mocs_compilation.cpp.o
+.PHONY : TicTacToe_autogen/mocs_compilation.o
+
+# target to build an object file
+TicTacToe_autogen/mocs_compilation.cpp.o:
+	cd /home/aquariusj/c++/myGames/build && $(MAKE) $(MAKESILENT) -f src/tictactoe/CMakeFiles/TicTacToe.dir/build.make src/tictactoe/CMakeFiles/TicTacToe.dir/TicTacToe_autogen/mocs_compilation.cpp.o
+.PHONY : TicTacToe_autogen/mocs_compilation.cpp.o
+
+TicTacToe_autogen/mocs_compilation.i: TicTacToe_autogen/mocs_compilation.cpp.i
+.PHONY : TicTacToe_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+TicTacToe_autogen/mocs_compilation.cpp.i:
+	cd /home/aquariusj/c++/myGames/build && $(MAKE) $(MAKESILENT) -f src/tictactoe/CMakeFiles/TicTacToe.dir/build.make src/tictactoe/CMakeFiles/TicTacToe.dir/TicTacToe_autogen/mocs_compilation.cpp.i
+.PHONY : TicTacToe_autogen/mocs_compilation.cpp.i
+
+TicTacToe_autogen/mocs_compilation.s: TicTacToe_autogen/mocs_compilation.cpp.s
+.PHONY : TicTacToe_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+TicTacToe_autogen/mocs_compilation.cpp.s:
+	cd /home/aquariusj/c++/myGames/build && $(MAKE) $(MAKESILENT) -f src/tictactoe/CMakeFiles/TicTacToe.dir/build.make src/tictactoe/CMakeFiles/TicTacToe.dir/TicTacToe_autogen/mocs_compilation.cpp.s
+.PHONY : TicTacToe_autogen/mocs_compilation.cpp.s
+
 tictactoe.o: tictactoe.cpp.o
 .PHONY : tictactoe.o
 
@@ -173,7 +211,11 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... TicTacToe_autogen"
 	@echo "... TicTacToe"
+	@echo "... TicTacToe_autogen/mocs_compilation.o"
+	@echo "... TicTacToe_autogen/mocs_compilation.i"
+	@echo "... TicTacToe_autogen/mocs_compilation.s"
 	@echo "... tictactoe.o"
 	@echo "... tictactoe.i"
 	@echo "... tictactoe.s"

@@ -140,6 +140,44 @@ Tree/fast:
 	cd /home/aquariusj/c++/myGames/build && $(MAKE) $(MAKESILENT) -f src/lib/CMakeFiles/Tree.dir/build.make src/lib/CMakeFiles/Tree.dir/build
 .PHONY : Tree/fast
 
+# Convenience name for target.
+src/lib/CMakeFiles/Tree_autogen.dir/rule:
+	cd /home/aquariusj/c++/myGames/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/lib/CMakeFiles/Tree_autogen.dir/rule
+.PHONY : src/lib/CMakeFiles/Tree_autogen.dir/rule
+
+# Convenience name for target.
+Tree_autogen: src/lib/CMakeFiles/Tree_autogen.dir/rule
+.PHONY : Tree_autogen
+
+# fast build rule for target.
+Tree_autogen/fast:
+	cd /home/aquariusj/c++/myGames/build && $(MAKE) $(MAKESILENT) -f src/lib/CMakeFiles/Tree_autogen.dir/build.make src/lib/CMakeFiles/Tree_autogen.dir/build
+.PHONY : Tree_autogen/fast
+
+Tree_autogen/mocs_compilation.o: Tree_autogen/mocs_compilation.cpp.o
+.PHONY : Tree_autogen/mocs_compilation.o
+
+# target to build an object file
+Tree_autogen/mocs_compilation.cpp.o:
+	cd /home/aquariusj/c++/myGames/build && $(MAKE) $(MAKESILENT) -f src/lib/CMakeFiles/Tree.dir/build.make src/lib/CMakeFiles/Tree.dir/Tree_autogen/mocs_compilation.cpp.o
+.PHONY : Tree_autogen/mocs_compilation.cpp.o
+
+Tree_autogen/mocs_compilation.i: Tree_autogen/mocs_compilation.cpp.i
+.PHONY : Tree_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+Tree_autogen/mocs_compilation.cpp.i:
+	cd /home/aquariusj/c++/myGames/build && $(MAKE) $(MAKESILENT) -f src/lib/CMakeFiles/Tree.dir/build.make src/lib/CMakeFiles/Tree.dir/Tree_autogen/mocs_compilation.cpp.i
+.PHONY : Tree_autogen/mocs_compilation.cpp.i
+
+Tree_autogen/mocs_compilation.s: Tree_autogen/mocs_compilation.cpp.s
+.PHONY : Tree_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+Tree_autogen/mocs_compilation.cpp.s:
+	cd /home/aquariusj/c++/myGames/build && $(MAKE) $(MAKESILENT) -f src/lib/CMakeFiles/Tree.dir/build.make src/lib/CMakeFiles/Tree.dir/Tree_autogen/mocs_compilation.cpp.s
+.PHONY : Tree_autogen/mocs_compilation.cpp.s
+
 tree.o: tree.cpp.o
 .PHONY : tree.o
 
@@ -173,7 +211,11 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... Tree_autogen"
 	@echo "... Tree"
+	@echo "... Tree_autogen/mocs_compilation.o"
+	@echo "... Tree_autogen/mocs_compilation.i"
+	@echo "... Tree_autogen/mocs_compilation.s"
 	@echo "... tree.o"
 	@echo "... tree.i"
 	@echo "... tree.s"

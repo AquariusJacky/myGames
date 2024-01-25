@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/aquariusj/c++/myGames/build/src/tictactoe/TicTacToe_autogen/mocs_compilation.cpp" "src/tictactoe/CMakeFiles/TicTacToe.dir/TicTacToe_autogen/mocs_compilation.cpp.o" "gcc" "src/tictactoe/CMakeFiles/TicTacToe.dir/TicTacToe_autogen/mocs_compilation.cpp.o.d"
   "/home/aquariusj/c++/myGames/src/tictactoe/tictactoe.cpp" "src/tictactoe/CMakeFiles/TicTacToe.dir/tictactoe.cpp.o" "gcc" "src/tictactoe/CMakeFiles/TicTacToe.dir/tictactoe.cpp.o.d"
   )
 

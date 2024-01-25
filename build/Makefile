@@ -65,16 +65,6 @@ CMAKE_BINARY_DIR = /home/aquariusj/c++/myGames/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/local/lib/python3.10/dist-packages/cmake/data/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-.PHONY : test/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -127,30 +117,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named MyGames
+# Target rules for targets named MyGame
 
 # Build rule for target.
-MyGames: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MyGames
-.PHONY : MyGames
+MyGame: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MyGame
+.PHONY : MyGame
 
 # fast build rule for target.
-MyGames/fast:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/MyGames.dir/build.make src/CMakeFiles/MyGames.dir/build
-.PHONY : MyGames/fast
-
-#=============================================================================
-# Target rules for targets named Tree
-
-# Build rule for target.
-Tree: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Tree
-.PHONY : Tree
-
-# fast build rule for target.
-Tree/fast:
-	$(MAKE) $(MAKESILENT) -f src/lib/CMakeFiles/Tree.dir/build.make src/lib/CMakeFiles/Tree.dir/build
-.PHONY : Tree/fast
+MyGame/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/build
+.PHONY : MyGame/fast
 
 #=============================================================================
 # Target rules for targets named TicTacToe
@@ -162,8 +139,45 @@ TicTacToe: cmake_check_build_system
 
 # fast build rule for target.
 TicTacToe/fast:
-	$(MAKE) $(MAKESILENT) -f src/tictactoe/CMakeFiles/TicTacToe.dir/build.make src/tictactoe/CMakeFiles/TicTacToe.dir/build
+	$(MAKE) $(MAKESILENT) -f libs/TicTacToe/CMakeFiles/TicTacToe.dir/build.make libs/TicTacToe/CMakeFiles/TicTacToe.dir/build
 .PHONY : TicTacToe/fast
+
+#=============================================================================
+# Target rules for targets named Tree
+
+# Build rule for target.
+Tree: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Tree
+.PHONY : Tree
+
+# fast build rule for target.
+Tree/fast:
+	$(MAKE) $(MAKESILENT) -f libs/Tree/CMakeFiles/Tree.dir/build.make libs/Tree/CMakeFiles/Tree.dir/build
+.PHONY : Tree/fast
+
+src/main.o: src/main.cpp.o
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 # Help Target
 help:
@@ -173,10 +187,12 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... test"
-	@echo "... MyGames"
+	@echo "... MyGame"
 	@echo "... TicTacToe"
 	@echo "... Tree"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 

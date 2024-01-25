@@ -69,10 +69,24 @@ include src/tictactoe/CMakeFiles/TicTacToe.dir/progress.make
 # Include the compile flags for this target's objects.
 include src/tictactoe/CMakeFiles/TicTacToe.dir/flags.make
 
+src/tictactoe/CMakeFiles/TicTacToe.dir/TicTacToe_autogen/mocs_compilation.cpp.o: src/tictactoe/CMakeFiles/TicTacToe.dir/flags.make
+src/tictactoe/CMakeFiles/TicTacToe.dir/TicTacToe_autogen/mocs_compilation.cpp.o: src/tictactoe/TicTacToe_autogen/mocs_compilation.cpp
+src/tictactoe/CMakeFiles/TicTacToe.dir/TicTacToe_autogen/mocs_compilation.cpp.o: src/tictactoe/CMakeFiles/TicTacToe.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aquariusj/c++/myGames/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/tictactoe/CMakeFiles/TicTacToe.dir/TicTacToe_autogen/mocs_compilation.cpp.o"
+	cd /home/aquariusj/c++/myGames/build/src/tictactoe && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/tictactoe/CMakeFiles/TicTacToe.dir/TicTacToe_autogen/mocs_compilation.cpp.o -MF CMakeFiles/TicTacToe.dir/TicTacToe_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/TicTacToe.dir/TicTacToe_autogen/mocs_compilation.cpp.o -c /home/aquariusj/c++/myGames/build/src/tictactoe/TicTacToe_autogen/mocs_compilation.cpp
+
+src/tictactoe/CMakeFiles/TicTacToe.dir/TicTacToe_autogen/mocs_compilation.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TicTacToe.dir/TicTacToe_autogen/mocs_compilation.cpp.i"
+	cd /home/aquariusj/c++/myGames/build/src/tictactoe && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aquariusj/c++/myGames/build/src/tictactoe/TicTacToe_autogen/mocs_compilation.cpp > CMakeFiles/TicTacToe.dir/TicTacToe_autogen/mocs_compilation.cpp.i
+
+src/tictactoe/CMakeFiles/TicTacToe.dir/TicTacToe_autogen/mocs_compilation.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TicTacToe.dir/TicTacToe_autogen/mocs_compilation.cpp.s"
+	cd /home/aquariusj/c++/myGames/build/src/tictactoe && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aquariusj/c++/myGames/build/src/tictactoe/TicTacToe_autogen/mocs_compilation.cpp -o CMakeFiles/TicTacToe.dir/TicTacToe_autogen/mocs_compilation.cpp.s
+
 src/tictactoe/CMakeFiles/TicTacToe.dir/tictactoe.cpp.o: src/tictactoe/CMakeFiles/TicTacToe.dir/flags.make
 src/tictactoe/CMakeFiles/TicTacToe.dir/tictactoe.cpp.o: /home/aquariusj/c++/myGames/src/tictactoe/tictactoe.cpp
 src/tictactoe/CMakeFiles/TicTacToe.dir/tictactoe.cpp.o: src/tictactoe/CMakeFiles/TicTacToe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aquariusj/c++/myGames/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/tictactoe/CMakeFiles/TicTacToe.dir/tictactoe.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aquariusj/c++/myGames/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/tictactoe/CMakeFiles/TicTacToe.dir/tictactoe.cpp.o"
 	cd /home/aquariusj/c++/myGames/build/src/tictactoe && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/tictactoe/CMakeFiles/TicTacToe.dir/tictactoe.cpp.o -MF CMakeFiles/TicTacToe.dir/tictactoe.cpp.o.d -o CMakeFiles/TicTacToe.dir/tictactoe.cpp.o -c /home/aquariusj/c++/myGames/src/tictactoe/tictactoe.cpp
 
 src/tictactoe/CMakeFiles/TicTacToe.dir/tictactoe.cpp.i: cmake_force
@@ -85,15 +99,17 @@ src/tictactoe/CMakeFiles/TicTacToe.dir/tictactoe.cpp.s: cmake_force
 
 # Object files for target TicTacToe
 TicTacToe_OBJECTS = \
+"CMakeFiles/TicTacToe.dir/TicTacToe_autogen/mocs_compilation.cpp.o" \
 "CMakeFiles/TicTacToe.dir/tictactoe.cpp.o"
 
 # External object files for target TicTacToe
 TicTacToe_EXTERNAL_OBJECTS =
 
+lib/libTicTacToe.a: src/tictactoe/CMakeFiles/TicTacToe.dir/TicTacToe_autogen/mocs_compilation.cpp.o
 lib/libTicTacToe.a: src/tictactoe/CMakeFiles/TicTacToe.dir/tictactoe.cpp.o
 lib/libTicTacToe.a: src/tictactoe/CMakeFiles/TicTacToe.dir/build.make
 lib/libTicTacToe.a: src/tictactoe/CMakeFiles/TicTacToe.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/aquariusj/c++/myGames/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library ../../lib/libTicTacToe.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/aquariusj/c++/myGames/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library ../../lib/libTicTacToe.a"
 	cd /home/aquariusj/c++/myGames/build/src/tictactoe && $(CMAKE_COMMAND) -P CMakeFiles/TicTacToe.dir/cmake_clean_target.cmake
 	cd /home/aquariusj/c++/myGames/build/src/tictactoe && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/TicTacToe.dir/link.txt --verbose=$(VERBOSE)
 

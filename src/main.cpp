@@ -1,4 +1,4 @@
-#include "tictactoe/tictactoe.h"
+#include "TicTacToe/tictactoe.h"
 
 #include <iostream>
 
