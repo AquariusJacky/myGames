@@ -1,8 +1,7 @@
 cmake_minimum_required(VERSION 3.20.2)
 
-set(PROJECT_NAME
-    TicTacToeLibrary
-)
+project(TicTacToeLibrary)
+
 set(LIBRARY_NAME
     TicTacToe
 )
@@ -18,8 +17,6 @@ set(LIBRARY_SOURCE_DIR
 set(LIBRARY_SOURCE
     ${LIBRARY_SOURCE_DIR}/tictactoe.cpp
 )
-
-project(${PROJECT_NAME})
 
 add_library(${LIBRARY_NAME} STATIC
     ${LIBRARY_HEADERS}

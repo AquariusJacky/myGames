@@ -1,4 +1,4 @@
-# myGames
+# MyGames
 This is going to be a combination of several minigames.
 
 ## Environment
