@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../lib/libPlayingCards.a CMakeFiles/PlayingCards.dir/src/sevens.cpp.o
+/usr/bin/ranlib ../../lib/libPlayingCards.a

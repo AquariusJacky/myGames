@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/aquariusj/c++/myGames/build/CMakeFiles /home/aquariusj/c++/myGames/build//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	cd /home/aquariusj/c++/myGames/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/aquariusj/c++/myGames/build/CMakeFiles /home/aquariusj/c++/myGames/build/libs/PlayingCards//CMakeFiles/progress.marks
+	cd /home/aquariusj/c++/myGames/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/PlayingCards/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/aquariusj/c++/myGames/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd /home/aquariusj/c++/myGames/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/PlayingCards/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,94 +103,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/aquariusj/c++/myGames/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/PlayingCards/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/aquariusj/c++/myGames/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/PlayingCards/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/aquariusj/c++/myGames/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named MyGame
+# Convenience name for target.
+libs/PlayingCards/CMakeFiles/PlayingCards.dir/rule:
+	cd /home/aquariusj/c++/myGames/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/PlayingCards/CMakeFiles/PlayingCards.dir/rule
+.PHONY : libs/PlayingCards/CMakeFiles/PlayingCards.dir/rule
 
-# Build rule for target.
-MyGame: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MyGame
-.PHONY : MyGame
-
-# fast build rule for target.
-MyGame/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/build
-.PHONY : MyGame/fast
-
-#=============================================================================
-# Target rules for targets named PlayingCards
-
-# Build rule for target.
-PlayingCards: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 PlayingCards
+# Convenience name for target.
+PlayingCards: libs/PlayingCards/CMakeFiles/PlayingCards.dir/rule
 .PHONY : PlayingCards
 
 # fast build rule for target.
 PlayingCards/fast:
-	$(MAKE) $(MAKESILENT) -f libs/PlayingCards/CMakeFiles/PlayingCards.dir/build.make libs/PlayingCards/CMakeFiles/PlayingCards.dir/build
+	cd /home/aquariusj/c++/myGames/build && $(MAKE) $(MAKESILENT) -f libs/PlayingCards/CMakeFiles/PlayingCards.dir/build.make libs/PlayingCards/CMakeFiles/PlayingCards.dir/build
 .PHONY : PlayingCards/fast
 
-#=============================================================================
-# Target rules for targets named TicTacToe
-
-# Build rule for target.
-TicTacToe: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TicTacToe
-.PHONY : TicTacToe
-
-# fast build rule for target.
-TicTacToe/fast:
-	$(MAKE) $(MAKESILENT) -f libs/TicTacToe/CMakeFiles/TicTacToe.dir/build.make libs/TicTacToe/CMakeFiles/TicTacToe.dir/build
-.PHONY : TicTacToe/fast
-
-#=============================================================================
-# Target rules for targets named Tree
-
-# Build rule for target.
-Tree: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Tree
-.PHONY : Tree
-
-# fast build rule for target.
-Tree/fast:
-	$(MAKE) $(MAKESILENT) -f libs/Tree/CMakeFiles/Tree.dir/build.make libs/Tree/CMakeFiles/Tree.dir/build
-.PHONY : Tree/fast
-
-src/main.o: src/main.cpp.o
-.PHONY : src/main.o
+src/sevens.o: src/sevens.cpp.o
+.PHONY : src/sevens.o
 
 # target to build an object file
-src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/src/main.cpp.o
-.PHONY : src/main.cpp.o
+src/sevens.cpp.o:
+	cd /home/aquariusj/c++/myGames/build && $(MAKE) $(MAKESILENT) -f libs/PlayingCards/CMakeFiles/PlayingCards.dir/build.make libs/PlayingCards/CMakeFiles/PlayingCards.dir/src/sevens.cpp.o
+.PHONY : src/sevens.cpp.o
 
-src/main.i: src/main.cpp.i
-.PHONY : src/main.i
+src/sevens.i: src/sevens.cpp.i
+.PHONY : src/sevens.i
 
 # target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
+src/sevens.cpp.i:
+	cd /home/aquariusj/c++/myGames/build && $(MAKE) $(MAKESILENT) -f libs/PlayingCards/CMakeFiles/PlayingCards.dir/build.make libs/PlayingCards/CMakeFiles/PlayingCards.dir/src/sevens.cpp.i
+.PHONY : src/sevens.cpp.i
 
-src/main.s: src/main.cpp.s
-.PHONY : src/main.s
+src/sevens.s: src/sevens.cpp.s
+.PHONY : src/sevens.s
 
 # target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
+src/sevens.cpp.s:
+	cd /home/aquariusj/c++/myGames/build && $(MAKE) $(MAKESILENT) -f libs/PlayingCards/CMakeFiles/PlayingCards.dir/build.make libs/PlayingCards/CMakeFiles/PlayingCards.dir/src/sevens.cpp.s
+.PHONY : src/sevens.cpp.s
 
 # Help Target
 help:
@@ -200,13 +162,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... MyGame"
 	@echo "... PlayingCards"
-	@echo "... TicTacToe"
-	@echo "... Tree"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
+	@echo "... src/sevens.o"
+	@echo "... src/sevens.i"
+	@echo "... src/sevens.s"
 .PHONY : help
 
 
@@ -218,6 +177,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/aquariusj/c++/myGames/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

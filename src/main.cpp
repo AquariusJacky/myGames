@@ -1,8 +1,9 @@
-#include "TicTacToe/tictactoe.h"
+#include "tictactoe.h"
 
 #include <iostream>
 
 using namespace std;
+
 int main() {
     tictactoe newGame;
     newGame.gameLoop();

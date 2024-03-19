@@ -11,6 +11,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.26.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.26.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.26.3/CMakeSystem.cmake"
+  "/home/aquariusj/c++/myGames/libs/PlayingCards/CMakeLists.txt"
   "/home/aquariusj/c++/myGames/libs/TicTacToe/CMakeLists.txt"
   "/home/aquariusj/c++/myGames/libs/Tree/CMakeLists.txt"
   "/usr/local/lib/python3.10/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeCInformation.cmake"
@@ -41,6 +42,7 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "libs/PlayingCards/CMakeFiles/CMakeDirectoryInformation.cmake"
   "libs/TicTacToe/CMakeFiles/CMakeDirectoryInformation.cmake"
   "libs/Tree/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
@@ -48,6 +50,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/MyGame.dir/DependInfo.cmake"
+  "libs/PlayingCards/CMakeFiles/PlayingCards.dir/DependInfo.cmake"
   "libs/TicTacToe/CMakeFiles/TicTacToe.dir/DependInfo.cmake"
   "libs/Tree/CMakeFiles/Tree.dir/DependInfo.cmake"
   )

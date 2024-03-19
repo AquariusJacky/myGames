@@ -18,7 +18,8 @@ set(SOURCE
 set(LIBRARIES_DIR
     libs
 )
-set(LIBRARIES 
+set(LIBRARIES
+    PlayingCards
     TicTacToe
     Tree
 )

@@ -1,21 +1,22 @@
 cmake_minimum_required(VERSION 3.20.2)
 
-project(TicTacToeLibrary)
+project(PlayingCardsLibrary)
 
 set(LIBRARY_NAME
-    TicTacToe
+    PlayingCards
 )
 set(LIBRARY_HEADERS_DIR
-    include
+    include/
 )
 set(LIBRARY_HEADERS
-    ${LIBRARY_HEADERS_DIR}/tictactoe.h
+    ${LIBRARY_HEADERS_DIR}/playingcards.h
+    ${LIBRARY_HEADERS_DIR}/sevens.h
 )
 set(LIBRARY_SOURCE_DIR
     src
 )
 set(LIBRARY_SOURCE
-    ${LIBRARY_SOURCE_DIR}/tictactoe.cpp
+    ${LIBRARY_SOURCE_DIR}/sevens.cpp
 )
 
 add_library(${LIBRARY_NAME} STATIC

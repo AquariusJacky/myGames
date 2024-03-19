@@ -64,20 +64,38 @@ CMAKE_BINARY_DIR = /home/aquariusj/c++/myGames/build
 
 # The main recursive "all" target.
 all: CMakeFiles/MyGame.dir/all
+all: libs/PlayingCards/all
 all: libs/TicTacToe/all
 all: libs/Tree/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
+preinstall: libs/PlayingCards/preinstall
 preinstall: libs/TicTacToe/preinstall
 preinstall: libs/Tree/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/MyGame.dir/clean
+clean: libs/PlayingCards/clean
 clean: libs/TicTacToe/clean
 clean: libs/Tree/clean
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory libs/PlayingCards
+
+# Recursive "all" directory target.
+libs/PlayingCards/all: libs/PlayingCards/CMakeFiles/PlayingCards.dir/all
+.PHONY : libs/PlayingCards/all
+
+# Recursive "preinstall" directory target.
+libs/PlayingCards/preinstall:
+.PHONY : libs/PlayingCards/preinstall
+
+# Recursive "clean" directory target.
+libs/PlayingCards/clean: libs/PlayingCards/CMakeFiles/PlayingCards.dir/clean
+.PHONY : libs/PlayingCards/clean
 
 #=============================================================================
 # Directory level rules for directory libs/TicTacToe
@@ -113,6 +131,7 @@ libs/Tree/clean: libs/Tree/CMakeFiles/Tree.dir/clean
 # Target rules for target CMakeFiles/MyGame.dir
 
 # All Build rule for target.
+CMakeFiles/MyGame.dir/all: libs/PlayingCards/CMakeFiles/PlayingCards.dir/all
 CMakeFiles/MyGame.dir/all: libs/TicTacToe/CMakeFiles/TicTacToe.dir/all
 CMakeFiles/MyGame.dir/all: libs/Tree/CMakeFiles/Tree.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/depend
@@ -122,7 +141,7 @@ CMakeFiles/MyGame.dir/all: libs/Tree/CMakeFiles/Tree.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/MyGame.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/aquariusj/c++/myGames/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/aquariusj/c++/myGames/build/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/MyGame.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/aquariusj/c++/myGames/build/CMakeFiles 0
 .PHONY : CMakeFiles/MyGame.dir/rule
@@ -137,13 +156,39 @@ CMakeFiles/MyGame.dir/clean:
 .PHONY : CMakeFiles/MyGame.dir/clean
 
 #=============================================================================
+# Target rules for target libs/PlayingCards/CMakeFiles/PlayingCards.dir
+
+# All Build rule for target.
+libs/PlayingCards/CMakeFiles/PlayingCards.dir/all:
+	$(MAKE) $(MAKESILENT) -f libs/PlayingCards/CMakeFiles/PlayingCards.dir/build.make libs/PlayingCards/CMakeFiles/PlayingCards.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs/PlayingCards/CMakeFiles/PlayingCards.dir/build.make libs/PlayingCards/CMakeFiles/PlayingCards.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/aquariusj/c++/myGames/build/CMakeFiles --progress-num=3,4 "Built target PlayingCards"
+.PHONY : libs/PlayingCards/CMakeFiles/PlayingCards.dir/all
+
+# Build rule for subdir invocation for target.
+libs/PlayingCards/CMakeFiles/PlayingCards.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/aquariusj/c++/myGames/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/PlayingCards/CMakeFiles/PlayingCards.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/aquariusj/c++/myGames/build/CMakeFiles 0
+.PHONY : libs/PlayingCards/CMakeFiles/PlayingCards.dir/rule
+
+# Convenience name for target.
+PlayingCards: libs/PlayingCards/CMakeFiles/PlayingCards.dir/rule
+.PHONY : PlayingCards
+
+# clean rule for target.
+libs/PlayingCards/CMakeFiles/PlayingCards.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs/PlayingCards/CMakeFiles/PlayingCards.dir/build.make libs/PlayingCards/CMakeFiles/PlayingCards.dir/clean
+.PHONY : libs/PlayingCards/CMakeFiles/PlayingCards.dir/clean
+
+#=============================================================================
 # Target rules for target libs/TicTacToe/CMakeFiles/TicTacToe.dir
 
 # All Build rule for target.
 libs/TicTacToe/CMakeFiles/TicTacToe.dir/all:
 	$(MAKE) $(MAKESILENT) -f libs/TicTacToe/CMakeFiles/TicTacToe.dir/build.make libs/TicTacToe/CMakeFiles/TicTacToe.dir/depend
 	$(MAKE) $(MAKESILENT) -f libs/TicTacToe/CMakeFiles/TicTacToe.dir/build.make libs/TicTacToe/CMakeFiles/TicTacToe.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/aquariusj/c++/myGames/build/CMakeFiles --progress-num=3,4 "Built target TicTacToe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/aquariusj/c++/myGames/build/CMakeFiles --progress-num=5,6 "Built target TicTacToe"
 .PHONY : libs/TicTacToe/CMakeFiles/TicTacToe.dir/all
 
 # Build rule for subdir invocation for target.
@@ -169,7 +214,7 @@ libs/TicTacToe/CMakeFiles/TicTacToe.dir/clean:
 libs/Tree/CMakeFiles/Tree.dir/all:
 	$(MAKE) $(MAKESILENT) -f libs/Tree/CMakeFiles/Tree.dir/build.make libs/Tree/CMakeFiles/Tree.dir/depend
 	$(MAKE) $(MAKESILENT) -f libs/Tree/CMakeFiles/Tree.dir/build.make libs/Tree/CMakeFiles/Tree.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/aquariusj/c++/myGames/build/CMakeFiles --progress-num=5,6 "Built target Tree"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/aquariusj/c++/myGames/build/CMakeFiles --progress-num=7,8 "Built target Tree"
 .PHONY : libs/Tree/CMakeFiles/Tree.dir/all
 
 # Build rule for subdir invocation for target.

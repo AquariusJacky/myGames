@@ -1,7 +1,7 @@
 libs/TicTacToe/CMakeFiles/TicTacToe.dir/src/tictactoe.cpp.o: \
  /home/aquariusj/c++/myGames/libs/TicTacToe/src/tictactoe.cpp \
  /usr/include/stdc-predef.h \
- /home/aquariusj/c++/myGames/libs/TicTacToe/include/TicTacToe/tictactoe.h \
+ /home/aquariusj/c++/myGames/libs/TicTacToe/include/tictactoe.h \
  /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \

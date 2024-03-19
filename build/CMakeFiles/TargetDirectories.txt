@@ -1,6 +1,9 @@
 /home/aquariusj/c++/myGames/build/CMakeFiles/MyGame.dir
 /home/aquariusj/c++/myGames/build/CMakeFiles/edit_cache.dir
 /home/aquariusj/c++/myGames/build/CMakeFiles/rebuild_cache.dir
+/home/aquariusj/c++/myGames/build/libs/PlayingCards/CMakeFiles/PlayingCards.dir
+/home/aquariusj/c++/myGames/build/libs/PlayingCards/CMakeFiles/edit_cache.dir
+/home/aquariusj/c++/myGames/build/libs/PlayingCards/CMakeFiles/rebuild_cache.dir
 /home/aquariusj/c++/myGames/build/libs/TicTacToe/CMakeFiles/TicTacToe.dir
 /home/aquariusj/c++/myGames/build/libs/TicTacToe/CMakeFiles/edit_cache.dir
 /home/aquariusj/c++/myGames/build/libs/TicTacToe/CMakeFiles/rebuild_cache.dir

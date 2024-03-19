@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/aquariusj/c++/myGames/libs/PlayingCards/include -I/home/aquariusj/c++/myGames/libs/TicTacToe/include -I/home/aquariusj/c++/myGames/libs/Tree/include
+CXX_INCLUDES = -I/home/aquariusj/c++/myGames/libs/PlayingCards/include/PlayingCards -I/home/aquariusj/c++/myGames/libs/PlayingCards/include
 
 CXX_FLAGS =  -Wall -std=gnu++17
 

@@ -92,6 +92,7 @@ MyGame_EXTERNAL_OBJECTS =
 
 bin/MyGame: CMakeFiles/MyGame.dir/src/main.cpp.o
 bin/MyGame: CMakeFiles/MyGame.dir/build.make
+bin/MyGame: lib/libPlayingCards.a
 bin/MyGame: lib/libTicTacToe.a
 bin/MyGame: lib/libTree.a
 bin/MyGame: CMakeFiles/MyGame.dir/link.txt
