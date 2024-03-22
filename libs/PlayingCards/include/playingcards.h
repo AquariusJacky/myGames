@@ -8,26 +8,41 @@
 
 using namespace std;
 
-enum Suit {Spade, Heart, Diamond, Clover};
+enum class Suit { Clubs, Diamonds, Hearts, Spades };
+enum class Rank { Ace = 1, Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten, Jack, Queen, King };
 
-class PlayingCards {
+class Card {
 public:
-    PlayingCards() {;
-        for (int i = 0; i < 52; i++) {
-            cardsSet.insert(i);
-            cardsVec.push_back(i);
-        }
-    };
-    void DrawCards(int num) {
-        if (num > cardsVec.size()) {
-            cout << "Not enough cards in Deck." << endl;
-            return;
-        }
+    Card(Suit suit, Rank rank) : suit_(suit), rank_(rank) {}
 
-    }
+    Suit getSuit() const { return suit_; }
+    Rank getRank() const { return rank_; }
+
 private:
-    unordered_set<int> cardsSet;
-    vector<int> cardsVec;
+    Suit suit_;
+    Rank rank_;
+};
+
+class PlayingCardGame {
+public:
+    PlayingCardGame(int numPlayers) : numPlayers_(numPlayers) {}
+
+    // Simulates shuffling the deck (replace with proper shuffle algorithm)
+    void shuffleDeck() {
+        // ... (implementation to shuffle the deck)
+    }
+
+    // Deal cards to players (replace with specific dealing logic)
+    void dealCards() {
+        // ... (implementation to deal cards based on game rules)
+    }
+
+    int getNumPlayers() const { return numPlayers_; }
+
+protected:
+    int numPlayers_;
+    vector<Card> tableCards_; // Cards on the table
+    vector<vector<Card>> playerHands_; // Cards for each player
 };
 
 #endif

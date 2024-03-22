@@ -3,7 +3,7 @@
 
 libs/TicTacToe/CMakeFiles/TicTacToe.dir/src/tictactoe.cpp.o: /home/aquariusj/c++/myGames/libs/TicTacToe/src/tictactoe.cpp \
   /usr/include/stdc-predef.h \
-  /home/aquariusj/c++/myGames/libs/TicTacToe/include/TicTacToe/tictactoe.h \
+  /home/aquariusj/c++/myGames/libs/TicTacToe/include/tictactoe.h \
   /usr/include/c++/11/vector \
   /usr/include/c++/11/bits/stl_algobase.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -271,10 +271,6 @@ libs/TicTacToe/CMakeFiles/TicTacToe.dir/src/tictactoe.cpp.o: /home/aquariusj/c++
 
 /usr/include/c++/11/bits/functional_hash.h:
 
-/usr/include/c++/11/bits/stl_bvector.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
-
 /usr/include/c++/11/typeinfo:
 
 /usr/include/x86_64-linux-gnu/bits/floatn-common.h:
@@ -319,6 +315,10 @@ libs/TicTacToe/CMakeFiles/TicTacToe.dir/src/tictactoe.cpp.o: /home/aquariusj/c++
 
 /usr/include/features.h:
 
+/usr/include/x86_64-linux-gnu/bits/timesize.h:
+
+/usr/include/c++/11/bits/functexcept.h:
+
 /usr/include/c++/11/bits/alloc_traits.h:
 
 /usr/include/c++/11/bits/predefined_ops.h:
@@ -337,9 +337,15 @@ libs/TicTacToe/CMakeFiles/TicTacToe.dir/src/tictactoe.cpp.o: /home/aquariusj/c++
 
 /usr/include/c++/11/bits/concept_check.h:
 
-/usr/include/c++/11/bits/functexcept.h:
+/usr/include/c++/11/bits/stl_bvector.h:
 
-/usr/include/x86_64-linux-gnu/bits/timesize.h:
+/usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
+
+/usr/include/c++/11/cctype:
 
 /usr/include/c++/11/ext/new_allocator.h:
 
@@ -360,6 +366,8 @@ libs/TicTacToe/CMakeFiles/TicTacToe.dir/src/tictactoe.cpp.o: /home/aquariusj/c++
 /usr/include/c++/11/bits/streambuf_iterator.h:
 
 /usr/include/c++/11/bits/exception_defines.h:
+
+/home/aquariusj/c++/myGames/libs/TicTacToe/include/tictactoe.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
 
@@ -384,8 +392,6 @@ libs/TicTacToe/CMakeFiles/TicTacToe.dir/src/tictactoe.cpp.o: /home/aquariusj/c++
 /usr/include/c++/11/bits/cpp_type_traits.h:
 
 /usr/include/c++/11/ext/type_traits.h:
-
-/home/aquariusj/c++/myGames/libs/TicTacToe/include/TicTacToe/tictactoe.h:
 
 /usr/include/c++/11/bits/allocator.h:
 
@@ -412,12 +418,6 @@ libs/TicTacToe/CMakeFiles/TicTacToe.dir/src/tictactoe.cpp.o: /home/aquariusj/c++
 /usr/include/x86_64-linux-gnu/bits/wchar.h:
 
 /usr/include/c++/11/clocale:
-
-/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
-
-/usr/include/c++/11/cctype:
 
 /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
 
